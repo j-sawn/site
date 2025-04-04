@@ -3,12 +3,12 @@
 ## to-do
 * **add portfolio items**
 * **organise files**
+* **fix weird line error on 'home' and 'links' page**
 * polish notebook/folder theme
   * tab-shaped buttons
   * pencil cursor???
   * header that looks like tape??? (need to edit every file but it's fun)
 * more funky css
-  * put buddy on the bottom
   * margin?
 * probably proof-read lol
 
