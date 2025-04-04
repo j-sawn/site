@@ -1,7 +1,12 @@
 body
 {
   color: black;
-  background: white;
+  background: repeating-linear-gradient(
+    #b5cbff 0px,
+    #b5cbff 2px,
+    white 2px,
+    white 40px
+  );
   font-family: 'Courier New', monospace;
   line-height: 1.5;
 }
