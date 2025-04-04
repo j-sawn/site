@@ -6,6 +6,7 @@
 * polish notebook/folder theme
   * tab-shaped buttons
   * pencil cursor???
+  * header that looks like tape??? (need to edit every file but it's fun)
 * more funky css
   * put buddy on the bottom
   * margin?
