@@ -2,6 +2,7 @@
 
 ## to-do
 * **add portfolio items**
+* **add a dark mode**
 * **organise files**
 * **fix weird line error on 'home' and 'links' page**
 * polish notebook/folder theme
