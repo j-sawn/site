@@ -70,6 +70,8 @@ body
   display: flex;
   justify-content: center;
   align-items: center; 
+  
+  position: relative;
 }
 
 #nav
@@ -139,7 +141,8 @@ body
   display: block;
   margin: auto;
   
-  cursor: url(https://cur.cursors-4u.net/cursors/cur-4/cur328.cur), pointer;
+  position: absolute; 
+  bottom: 0;
 }
 
 #buddy:active
