@@ -1,10 +1,11 @@
 # site
 
 ## to-do
-* add portfolio items
+* **add portfolio items**
 * polish notebook/folder theme
-  * lined background
   * tab-shaped buttons
   * pencil cursor???
 * more funky css
+  * put buddy on the bottom
+  * margin?
 * probably proof-read lol
