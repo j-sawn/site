@@ -1,7 +1,7 @@
 // code related to header
 
 function splitWrap() { // splits preferred title text and wraps it all individually into workable nodes for animation
-  var target = document.getElementById("title");
+  var target = document.getElementById("hometitle");
   var letters = target.textContent.split("");
   target.textContent = "";
   
@@ -18,7 +18,7 @@ splitWrap();
 
 function rockyAnim() { // iterates through each character of the title text to apply the animation sequentially
   
-  var letters = document.getElementById('title').getElementsByTagName('span');
+  var letters = document.getElementById('hometitle').getElementsByTagName('span');
   
   for (let i = 0; i < letters.length; i++)
     {
@@ -65,17 +65,3 @@ buttonPos();
 window.addEventListener('resize', function() {
   buttonPos();
 });
-
-
-  
-
-// code related to cursor
-
-
-
-
-
-
-
-
-
