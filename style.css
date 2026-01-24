@@ -1,36 +1,53 @@
-body {
-  body: 0;
-  height: 100%;
-  background: #F7E1D7;
+* {
+  
   
   cursor: url("https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f353.svg"), auto;
+  
+}
+
+body {
+  background-color: #F7E1D7;
+}
+
+#main {
+  position: fixed;
 }
 
 #title {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  
+  padding: 50px;
+  width: fit-content;
+  
   color: #624F4C;
+  background: #FFF0ED;
+  border-radius: 100%;
+  
   text-align: center;
   font-family: "Gaegu", sans-serif;
   letter-spacing: -1.5px;
-  font-size: 300%;
-}
-
-#nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 5px;
-  justify-items: center;
+  font-size: 500%;
 }
 
 .navbutton {
+  position: fixed; 
+  z-index: 1;
+  transform: translate(-50%, 50%);
+  
+  aspect-ratio : 1 / 1;
+  width: auto;
+  padding: 10px;
+
   font-weight: bold;
   font-family: "Varela Round", sans-serif;
-  padding: 10px;
-  width: 80%;
-  font-size: 100%;
+  font-size: 200%;
+  
   color: #FFF0ED;
   background: #84AE86;
   border: 0;
-  border-radius: 10px;
+  border-radius: 100%;
 }
 
 .navbutton:hover {
@@ -39,56 +56,20 @@ body {
   background: #FFF0ED;
 }
 
-#main {
-  display: block;
-  margin: auto;
-  padding: 10px;
-  
-  width: 90%;
-  color: #624F4C;
-  background: #FFF0ED;
-  
-  border-radius: 10px;
-}
-
 #heading {
   color: #624F4C;
   font-family: "Gaegu", sans-serif;
-  font-size: 200%;
   text-align: center;
 }
-
-#blurb {
-  color: #624F4C;
-  font-family: "Varela Round", sans-serif;
-  text-align: center;
-}
-
-
-#blurbimage {
-  display: grid;
-  width: 90%;
-  position: relative;
-  left: 10%;
-  
-  place-items: center;
-  grid-template-columns: 1fr 1fr;
-  
-  font-family: "Varela Round", sans-serif;
-}
-
-#pfp {
-  width: 90%;
-  border-radius: 100%;
-  border-style: double;
-  border-color: #624F4C;
-}
-
 
 
 #info {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  
   color: #624F4C;
   font-family: "Varela Round", sans-serif;
-  margin-right: 1%;
+
   text-align: right;
 }
