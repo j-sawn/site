@@ -50,12 +50,12 @@ function buttonPos() {
       
       var top_val = 0;
       if (i%2 == 1) { // bigger button
-        top_val += 125;
+        top_val += 200;
       }
       else { // smaller buttons
-        top_val -= 50;
+        top_val += 30;
       }
-      buttons[i].style.top = ((window.innerHeight/2) + top_val) + "px";
+      buttons[i].style.top = ((window.innerHeight/4) + top_val) + "px";
     }
 }
 
