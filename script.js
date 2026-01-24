@@ -42,7 +42,7 @@ rockyAnim();
 // code related to positioning
 
 function buttonPos() { 
-  var buttons = document.getElementsByClassName('navbutton');
+  var buttons = document.getElementsByClassName('homebutton');
   for (let i = 0; i < buttons.length; i++)
     {
       var left_val = ((1 - i) * 150);
@@ -55,17 +55,25 @@ function buttonPos() {
       else { // smaller buttons
         top_val -= 25;
       }
-      buttons[i].style.top = (top_val) + "px";
+      buttons[i].style.top = ((window.innerHeight/2) + top_val) + "px";
     }
 }
 
 // intial positioning
 buttonPos();
 
-// for when the user updates their window dimensions
 window.addEventListener('resize', function() {
   buttonPos();
 });
+
+
+  
+
+// code related to cursor
+
+
+
+
 
 
 
