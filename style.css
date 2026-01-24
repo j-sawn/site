@@ -12,7 +12,7 @@ body {
 
 #hometitle {
   position: fixed;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, 0%);
   
@@ -32,7 +32,7 @@ body {
 .homebutton {
   position: fixed; 
   z-index: 1;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 0%);
   
   aspect-ratio : 1 / 1;
   width: auto;
