@@ -1,7 +1,8 @@
 // code related to header
 
-function splitWrap() { // splits preferred title text and wraps it all individually into workable nodes for animation
-  var target = document.getElementById("hometitle");
+function splitWrap(id) { // splits preferred title text and wraps it all individually into workable nodes for animation
+  var target = document.getElementById(id);
+  if (!target) return; // because 'hometitle' and 'title' are in different pages
   var letters = target.textContent.split("");
   target.textContent = "";
   
@@ -14,11 +15,15 @@ function splitWrap() { // splits preferred title text and wraps it all individua
     }
 }
 
-splitWrap();
+splitWrap("hometitle");
+splitWrap("title");
 
-function rockyAnim() { // iterates through each character of the title text to apply the animation sequentially
+function rockyAnim(id) { // iterates through each character of the title text to apply the animation sequentially
+
+  var target = document.getElementById(id);
+  if (!target) return; // because 'hometitle' and 'title' are in different pages
   
-  var letters = document.getElementById('hometitle').getElementsByTagName('span');
+  var letters = target.getElementsByTagName('span');
   
   for (let i = 0; i < letters.length; i++)
     {
@@ -37,7 +42,8 @@ function rockyAnim() { // iterates through each character of the title text to a
   
 }
 
-rockyAnim();
+rockyAnim("hometitle");
+rockyAnim("title");
 
 // code related to positioning
 
@@ -64,4 +70,38 @@ buttonPos();
 
 window.addEventListener('resize', function() {
   buttonPos();
+});
+
+// button clicking stuff bc I'm a lazy bum lol
+
+function clickManager(id) {
+	var target = document.getElementById(id);
+	if (!target) return;
+	target.addEventListener("click", () => {
+  window.location.href = `https://asogou.nekoweb.org/${id}.html`;
+});
+}
+
+clickManager("about")
+clickManager("stuff")
+clickManager("more")
+
+// music playing
+
+const record = new Audio('dont-let-the-moon-catch-you-cryin.mp3');
+record.loop = true;
+record.volume = 0.5;
+
+const recimage = document.getElementById("recimage");
+
+recimage.addEventListener('click', () => {
+	if (record.paused) {
+		record.play();
+		recimage.style.animation = `spinning 10s linear infinite`;
+	} 
+	else {
+	    record.pause();
+	    recimage.style.animation = 'none';
+	    recimage.style.transform = `rotate(0deg)`;
+	}
 });
