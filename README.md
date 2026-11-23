@@ -1,9 +1,15 @@
-## to-do
+# **LIVE AT:** [https://j-sawn.github.io/site/](https://j-sawn.github.io/site/)
 
-* about page
-* work page
-* contact page
-* translate everything into react or a similar framework (rip)
-* adjust for mobile
+## CREDITS
+* Ween for the music recommendation
+* Literally everyone behind Hot Fuzz for the movie recommendation
+* [@user-352037510 on SoundCloud](https://soundcloud.com/user-352037510/dont-let-the-moon-catch-you-cryin) for the music .mp3 file
+* The mandatory Google Gemini AI Overviews for on-the-go help lol
 
-Previous versions/drafts can be found here: https://codepen.io/jsawn
+## TO-DO
+- [ ] Translate everything into react or a similar framework (rip)
+- [ ] Adjust for mobile
+- [ ] Re-think site theme/structure?
+
+## NOTES
+* Previous versions/drafts can be found here: https://codepen.io/jsawn
