@@ -78,7 +78,7 @@ function clickManager(id) {
 	var target = document.getElementById(id);
 	if (!target) return;
 	target.addEventListener("click", () => {
-  window.location.href = `https://asogou.nekoweb.org/${id}.html`;
+  window.location.href = `https://j-sawn.github.io/site/${id}.html`;
 });
 }
 
