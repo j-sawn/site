@@ -1,10 +1,26 @@
 * {
-  cursor: url("https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f353.svg"), auto;
+  cursor: url("https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Noto_Emoji_v2.034_1f3a3.svg/250px-Noto_Emoji_v2.034_1f3a3.svg.png?utm_source=en.wiktionary.org&utm_campaign=parser&utm_content=thumbnail"), auto;
 }
 
 body {
   background-color: #F7E1D7;
 }
+
+@keyframes spinning {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+a {
+  color: #9E7F7B;
+}
+
+/* --- HOME PAGE --- */
 
 #main {
   position: fixed;
@@ -33,25 +49,203 @@ body {
   position: fixed; 
   z-index: 1;
   transform: translate(-50%, 0%);
-  
-  aspect-ratio : 1 / 1;
+
   width: auto;
   padding: 10px;
+  aspect-ratio: 1/1;
 
   font-weight: bold;
   font-family: "Varela Round", sans-serif;
   font-size: 200%;
   
   color: #FFF0ED;
-  background: #84AE86;
   border: 0;
   border-radius: 100%;
 }
 
-.homebutton:hover {
+#about {
+	background: #fc5176;
+}
+
+#about:hover {
+  transition: 0.5s;
+  color: #fc5176;
+  background: #FFF0ED;
+}
+
+#more {
+	background: #84AE86;
+}
+
+#more:hover {
   transition: 0.5s;
   color: #84AE86;
   background: #FFF0ED;
+}
+
+#stuff {
+	background: #fc7958;
+}
+
+#stuff:hover {
+  transition: 0.5s;
+  color: #fc7958;
+  background: #FFF0ED;
+}
+
+/* --- MAIN PAGES --- */
+
+#title {
+  color: #624F4C;
+  text-align: center;
+  font-family: "Gaegu", sans-serif;
+  letter-spacing: -1.5px;
+  font-size: 300%;
+}
+
+#page {
+  display: flex;
+  gap: 0px;
+  justify-content: center;
+  align-items: start; 
+  animation: fadeIn 1s ease-in-out; 
+}
+
+#nav {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+#aboutnav {
+  color: #fc5176;
+  background: #FFF0ED;
+}
+
+#morenav {
+  color: #84AE86;
+  background: #FFF0ED;
+}
+
+#stuffnav {
+  color: #fc7958;
+  background: #FFF0ED;
+}
+
+.navbutton {
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  padding: 10px;
+  width: 100%;
+  font-size: 150%;
+  color: #FFF0ED;
+  background: #84AE86;
+  border: 0;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#block {
+  display: block;
+  padding: 10px;
+  width: 50%;
+  color: #624F4C;
+  background: #FFF0ED;
+  border-radius: 0px 10px 10px 10px;
+}
+
+#heading {
+  color: #624F4C;
+  font-family: "Gaegu", sans-serif;
+  font-size: 200%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#blurb {
+  color: #624F4C;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+}
+
+
+#blurbimage {
+  display: flex;
+  width: 80%;
+  position: relative;
+  
+  margin: auto;
+  justify-content: center;
+  align-items: center; 
+  
+  padding: 10px;
+  
+  font-family: "Varela Round", sans-serif;
+}
+
+#blurbi {
+  width: 70%;
+}
+
+#pfpimage {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  
+  border-radius: 100%;
+  border: 5px solid #624F4C;
+}
+
+#pfptext { 
+  position: absolute;
+  bottom: 0vh;
+  right: 0vh;
+  
+  font-size: 200%;
+  text-shadow: -1px -1px 0 #FFF0ED, 1px -1px 0 #FFF0ED, -1px 1px 0 #FFF0ED, 1px 1px 0 #FFF0ED;
+  rotate: -15deg;
+
+  font-family: "Gaegu", sans-serif;
+}
+
+
+#movimage {
+  width: 60%;
+  display: block;
+  margin-right: auto;
+}
+
+
+
+#recimage {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+
+#imgtextl { 
+  position: absolute;
+  bottom: 0vh;
+  left: 0vh;
+  font-size: 150%;
+  line-height: 0.7;
+  text-shadow: -1px -1px 0 #FFF0ED, 1px -1px 0 #FFF0ED, -1px 1px 0 #FFF0ED, 1px 1px 0 #FFF0ED;
+  rotate: 15deg;
+
+  font-family: "Gaegu", sans-serif;
+}
+
+#imgtext { 
+  position: absolute;
+  bottom: 0vh;
+  right: 0vh;
+  font-size: 150%;
+  line-height: 0.7;
+  text-shadow: -1px -1px 0 #FFF0ED, 1px -1px 0 #FFF0ED, -1px 1px 0 #FFF0ED, 1px 1px 0 #FFF0ED;
+  rotate: -15deg;
+  font-family: "Gaegu", sans-serif;
 }
 
 #info {
